@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #282A39;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #282A39;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+#middle{
+
+}
+#middle h1{
+	margin-left: 60px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+#middle ul{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+#middle ul li{
+	position: absolute;
+}
+#middle ul li div.img-container1{
+	width: 25%;
+}
+#middle ul li div.img-container{
+	width: 35%;
+}
+#middle ul li div.img-container3{
+	width: 15%;
+}
+#middle ul li img{
+	width: 100%;
+	display: block;
+}
+
+#middle ul li h3{
+
+}
+	
+#middle ul li p{
+	border-bottom: 1px dotted black;
+	width: 36%;
+	margin-top: 20px;
+}
+#middle ul li:first-child{
+	top: 250px;
+    left: 50px;
+}
+#middle ul li:nth-child(2){
+	right: 0;
+    top: 90px;
+	left: 520px;
+}
+#middle ul li:last-child{
+	right: -540px;
+    top: 75px;
+}
+@media all and (max-width: 1280px){
+	#middle ul li p {
+		width: 30%;
+	}
+	#middle ul li:last-child {
+		right: -665px;
+		top: 68px;
+	}
+	#middle ul li:nth-child(2) {
+		top: 70px;
+		left: 443px;
+	}
+}
+@media all and (max-width: 1050px){
+	#middle ul li:first-child {
+		top: 400px;
+	}
+	#middle ul li:nth-child(2) {
+		top: 40%;
+		left: 38%;
+	}
+	#middle ul li:last-child {
+		right: -70%;
+		top: 15%;
+	}
+}
+@media all and (max-width: 980px){
+	#middle ul{
+		position: static;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 10%;
+	}
+	#middle ul li{
+		position: static;
+		width: 100%;
+		margin-left: 25%;
+	}
+	#middle ul li div.img-container1{
+		width: 40%;
+	}
+	#middle ul li div.img-container{
+		width: 40%;
+	}
+	#middle ul li div.img-container3{
+		width: 30%;
+		margin-top: 8%;
+	}
+}
+@media all and (max-width: 640px){
+	#middle ul li {
+		margin-left: 20%;
+	}
+	
+	#middle ul li p {
+		font-size: 15px;
+	}
+}
+@media all and (max-width: 480px){
+	#middle ul li {
+		margin-left: 20%;
+	}
+	#middle h1 {
+		font-size: 15px;
+	}
+	#middle ul li p {
+		font-size: 15px;
+	}
+	#middle ul li h3 {
+		font-size: 15px;
+}
